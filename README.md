@@ -1,34 +1,37 @@
-Indian Sign Language Learning Platform
-This project is a capstone project focused on creating an Indian Sign Language (ISL) learning platform that helps users learn ISL through interactive quizzes and provides feedback using computer vision technology.
+ISL Academy – Indian Sign Language Learning Tool
 
-Project Overview
-The platform allows users to:
+ISL Academy is a simple educational web application designed to help users learn and practice Indian Sign Language (ISL). The platform includes learning resources, quizzes for self-assessment, and an integrated AI tool to detect hand signs using the user's webcam.
 
-Learn basic and intermediate signs of Indian Sign Language.
-Take quizzes to test their knowledge of different signs.
-Receive real-time feedback on their signing accuracy using a camera, powered by computer vision.
-The computer vision model tracks hand movements and compares them with correct signs to provide guidance and corrective feedback.
+Features:
 
-Key Features:
-Interactive Lessons: Users can explore various signs with clear instructions and video demonstrations.
-Quizzes: Interactive quizzes help users practice the signs they’ve learned.
-Real-time Feedback: Using computer vision, the system provides feedback on the accuracy of the performed sign compared to the correct version.
-Progress Tracking: Users can track their performance and improvement over time.
+- Learn commonly used Indian Sign Language signs
+- Take interactive quizzes to test sign recognition
+- Track and view progress
+- Use webcam to test hand signs with AI-based feedback
+
+AI Integration:
+
+- The platform includes a backend service connected to a trained hand gesture recognition model
+- It uses the user's webcam input and analyzes gestures using OpenCV and Python
+- The model provides real-time feedback to help users practice accurate signs
+
 Technologies Used:
-Frontend: HTML, CSS, JavaScript
-Backend: Python (Flask/Django)
-Computer Vision: OpenCV, TensorFlow/Keras (for sign recognition)
-Database: MySQL/PostgreSQL
-Camera Integration: JavaScript and WebRTC for capturing sign videos
-Quizzes: Dynamic quizzes created using React/Angular/Vue.js
-Sign Up/Login: Create an account or log in to access the lessons and quizzes.
-Learning: Browse through the different categories of signs and watch the demonstrations.
-Quiz Mode: Test your knowledge through quizzes. The camera will be activated to capture your sign.
-Feedback: The system will analyze your sign using computer vision and provide feedback on how close it is to the correct sign.
-Roadmap
-Prototype Version: The current version is a prototype and is not the final version. This prototype demonstrates the core functionality of the learning platform.
-Final Version: The final version, with more features and refinements, will be uploaded after the project undergoes final evaluation and testing.
-Contributing
-Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request.
 
-# Note: This is a prototype version. The final version will be uploaded after the final evaluation.
+- Frontend: HTML, CSS, JavaScript
+- Backend: Flask (Python)
+- AI: Trained gesture detection model using OpenCV and TensorFlow/Keras
+
+How to Run:
+
+1. Clone the repository
+2. Run the backend Flask server
+3. Open index.html in a browser to access the learning and quiz modules
+4. Use the hand detection page to interact with the AI tool
+
+Notes:
+
+- Designed to assist beginners in learning ISL with minimal setup
+- AI model works best in proper lighting and with a neutral background
+- Project is actively being improved with more signs and better detection
+
+
